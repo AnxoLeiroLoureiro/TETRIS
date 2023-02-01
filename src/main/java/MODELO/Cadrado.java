@@ -14,10 +14,38 @@ import javax.swing.JLabel;
 public class Cadrado {
     public int x;
     public int y;
-    public Color colorRecheo;
-    public JLabel lblCadrado;
+    public Color corRecheo;
+    public JLabel lblCadrado = new JLabel();
 
-    public String getCoordenadas() {
-
+    public Cadrado(int x, int y, Color corRecheo) {
+        this.x = x;
+        this.y = y;
+        this.corRecheo = corRecheo;
+        
+        lblCadrado.setBackground(corRecheo);
+        lblCadrado.setLocation(x, y);
     }
+    
+    
+    
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+    
+    public String getCoordenadas(){
+        String coordenadas = "" + this.x + this.y;
+        return coordenadas;
+    } 
 }

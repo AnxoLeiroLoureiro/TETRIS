@@ -4,28 +4,29 @@
  */
 package MODELO;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author a22anxoll
  */
-public class Ficha{
+public abstract class Ficha{
+    ArrayList<Cadrado> cadrados = new ArrayList<>();
+    iterator<cadrados>
+    public boolean moverFichaDereita() {
+        boolean mover = false;
+        return mover;
+    } 
 
-       public Ficha() {
+    public boolean moverFichaEsquerda() {
+        boolean mover = false;
+        return mover;
     }
-    
-    public boolean moverDereita(){
-       
+
+    public boolean moverFichaAbaixo() {
+        boolean mover = false;
+        return mover;
     }
-    
-    public boolean moverEsquerda(){
-          
-    }
-    
-    public boolean moverAbaixo(){
-        
-    }
-    
-    public boolean rotar(){
-        
-    }
+
+    public abstract boolean rotarFicha();
 }
