@@ -5,6 +5,7 @@
 package MODELO;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  *
@@ -12,8 +13,10 @@ import java.util.ArrayList;
  */
 public abstract class Ficha {
 
-    ArrayList<Cadrado> cadrados = new ArrayList<>();
-
+    public ArrayList <Cadrado> cadrados = new ArrayList();
+    private Iterator <Cadrado> iterCadrados;
+    public Xogo xogo;
+            
     public Ficha() {
 
         Cadrado c1 = new Cadrado();
@@ -45,4 +48,9 @@ public abstract class Ficha {
     }
 
     public abstract boolean rotarFicha();
-}
+    
+    
+
+
+    
+    
