@@ -5,18 +5,37 @@
 package MODELO;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  *
  * @author a22anxoll
  */
-public abstract class Ficha{
-    ArrayList<Cadrado> cadrados = new ArrayList<>();
-    iterator<cadrados>
+public abstract class Ficha {
+
+    public ArrayList <Cadrado> cadrados = new ArrayList();
+    private Iterator <Cadrado> iterCadrados;
+    public Xogo xogo;
+            
+    public Ficha() {
+
+        Cadrado c1 = new Cadrado();
+        cadrados.add(c1);
+
+        Cadrado c2 = new Cadrado();
+        cadrados.add(c2);
+
+        Cadrado c3 = new Cadrado();
+        cadrados.add(c3);
+
+        Cadrado c4 = new Cadrado();
+        cadrados.add(c4);
+    }
+
     public boolean moverFichaDereita() {
         boolean mover = false;
         return mover;
-    } 
+    }
 
     public boolean moverFichaEsquerda() {
         boolean mover = false;
@@ -29,4 +48,9 @@ public abstract class Ficha{
     }
 
     public abstract boolean rotarFicha();
-}
+    
+    
+
+
+    
+    

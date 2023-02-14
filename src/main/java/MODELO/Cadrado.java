@@ -21,12 +21,13 @@ public class Cadrado {
         this.x = x;
         this.y = y;
         this.corRecheo = corRecheo;
-        
-        lblCadrado.setBackground(corRecheo);
+        lblCadrado= new JLabel();
         lblCadrado.setLocation(x, y);
-    }
-    
-    
+        lblCadrado.setBackground(corRecheo);
+                
+        
+        
+    }   
     
     public int getX() {
         return x;
@@ -45,7 +46,6 @@ public class Cadrado {
     }
     
     public String getCoordenadas(){
-        String coordenadas = "" + this.x + this.y;
-        return coordenadas;
+        return x + "" + y;
     } 
 }
